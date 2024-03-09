@@ -1,0 +1,67 @@
+/* css for the all basic tags like html, body, etc. */
+body{
+    margin: 0;
+    padding: 0;
+    background-color: purple;
+}
+*, *::after, *::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+input[type="checkbox"]{
+    display: none;
+}
+.styling{
+    font-family: sans-serif;
+}
+
+/* css for the header tag of the webpage */
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: rgb(0,0,0,0.36);
+    padding: 9px;
+    box-shadow: 0px 0px 47px black;
+}
+.left-header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 11px;
+}
+.left-header i{
+    font-size: 56px;
+    -webkit-text-stroke: 1.5px #cabdff;
+    color: rgb(0, 0, 0, 0.81);
+    text-shadow: 0px 0px 9px #cabdff, 0px 0px 11px #cabdff;
+}
+.left-header p{
+    font-size: 36px;
+    font-weight: bold;
+    background: linear-gradient(45deg, #7633c1, #f22c7e);
+    background-clip: text;
+    color: transparent;
+    -webkit-text-stroke: 1px #cabdff;
+}
+
+/* css for the right/options part of the header */
+.hamburger{
+    display: none;
+}
+.options{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 47px;
+    font-size: 24px;
+}
+.options a{
+    color: #ffffff;
+    text-decoration: none;
+    transition: all .36s ease;
+}
+#active, .options a:hover{
+    color: #f22c7e;
+}
