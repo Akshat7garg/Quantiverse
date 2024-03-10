@@ -22,8 +22,9 @@ input[type="checkbox"]{
     align-items: center;
     justify-content: space-around;
     background: rgb(0,0,0,0.36);
-    padding: 9px;
+    height: 74px;
     box-shadow: 0px 0px 47px black;
+    overflow: hidden;
 }
 .left-header{
     display: flex;
@@ -47,7 +48,7 @@ input[type="checkbox"]{
 }
 
 /* css for the right/options part of the header */
-.hamburger{
+#hamburger{
     display: none;
 }
 .options{
@@ -64,4 +65,170 @@ input[type="checkbox"]{
 }
 #active, .options a:hover{
     color: #f22c7e;
+}
+
+
+
+
+
+
+/* responsiveness for mini laptops */
+@media screen and (max-width:1172px) {
+    .left-header{
+        gap: 6px;
+    }
+    .left-header i{
+        font-size: 51px;
+    }
+    .left-header p{
+        font-size: 34px;
+    }
+    .options{
+        gap: 38px;
+        font-size: 21px;
+    }
+}
+
+
+
+/* responsiveness for tablet */
+@media screen and (max-width:938px) {
+    #hamburger{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 6px;
+        position: relative;
+        width: 51px;
+        height: 51px;
+        border-radius: 11px;
+        transition: all .36s ease;
+    }
+    #hamburger span{
+        width: 83%;
+        height: 5.6px;
+        background: linear-gradient(45deg, #7633c1, #f22c7e);
+        border-radius: 3px;
+        transition: all .36s ease;
+    }
+    .options{
+        position: absolute;
+        flex-direction: column;
+        width: 100%;
+        top: 74px;
+        height: 0px;
+        gap: 20px;
+        background: rgb(0, 0, 0, 0.36);
+        backdrop-filter: blur(5px);
+        box-shadow: 0px 18px 47px black;
+        overflow: hidden;
+        transition: all .36s ease;
+    }
+    #drop:checked + #hamburger{
+        box-shadow: 0px 0px 18px black;
+    }
+    #drop:checked + #hamburger > span:nth-child(1){
+        position: absolute;
+        transform: rotate(45deg);
+    }
+    #drop:checked + #hamburger > span:nth-child(2){
+        opacity: 0;
+    }
+    #drop:checked + #hamburger > span:nth-child(3){
+        position: absolute;
+        transform: rotate(-45deg);
+    }
+    #drop:checked + #hamburger + .options{
+        height: 218px;
+    }
+}
+
+
+
+/* responsiveness for large mobile */
+@media screen and (max-width:542px) {
+    .header{
+        height: 63px;
+    }
+    .left-header i{
+        font-size: 45px;
+    }
+    .left-header p{
+        font-size: 27px;
+    }
+    #hamburger{
+        width: 56px;
+        height: 45px;
+    }
+    .options{
+        top: 63px;
+        gap: 18px;
+        font-size: 20px;
+    }
+    #drop:checked + #hamburger + .options{
+        height: 191px;
+    }
+}
+
+
+
+/* responsiveness for medium mobile */
+@media screen and (max-width:398px) {
+    .left-header i{
+        font-size: 42px;
+    }
+    .left-header p{
+        font-size: 24px;
+    }
+    #hamburger{
+        width: 51px;
+    }
+    .options{
+        font-size: 18px;
+    }
+    #drop:checked + #hamburger + .options{
+        height: 182px;
+    }
+}
+
+
+
+/* responsiveness for small mobile */
+@media screen and (max-width:353px) {
+    .left-header i{
+        font-size: 38px;
+    }
+    .left-header p{
+        font-size: 21px;
+    }
+    #hamburger{
+        width: 45px;
+    }
+}
+
+
+
+/* responsiveness for very small mobile */
+@media screen and (max-width:308px) {
+    .left-header{
+        margin-left: 6px;
+        gap: 4px;
+    }
+    .left-header i{
+        font-size: 36px;
+    }
+    .left-header p{
+        font-size: 20px;
+    }
+    #hamburger{
+        margin-right: 6px;
+    }
+    .options{
+        font-size: 16px;
+        gap: 16px;
+    }
+    #drop:checked + #hamburger + .options{
+        height: 162px;
+    }
 }
