@@ -1,0 +1,76 @@
+/* css for all the basic tags like HTML, body, etc. */
+body{
+    margin: 0;
+    padding: 0;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+input[type="checkbox"]{
+    display: none;
+}
+
+/* css for the home page section */
+.home-page{
+    height: 100vh;
+    width: 100%;
+    background: #361859;
+    overflow: hidden;
+}
+/* css for the header section */
+.header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 72px;
+    width: 100%;
+    background: rgb(0,0,0,0.47);
+    overflow: hidden;
+}
+
+/* css for the left part of the header */
+.left-header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 11px;
+}
+.left-header i{
+    font-size: 47px;
+    -webkit-text-stroke: 1px #fff;
+    color: #000;
+    text-shadow: 0px 0px 11px #fff;
+}
+.left-header p{
+    font-size: 29px;
+    font-weight: bolder;
+    color: transparent;
+    background: linear-gradient(90deg, #7633c1, #f22c7e);
+    background-clip: text;
+    -webkit-text-stroke: 1px #cabdff;
+    text-transform: uppercase;
+    font-family: sans-serif;
+}
+
+/* css for the right part of the header */
+.options{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 56px;
+    font-size: 21px;
+    font-family: sans-serif;
+}
+.options a, .options label{
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.36s ease;
+}
+.options a:last-child, .options label{
+    color: #cabdff;
+}
+.options a:last-child:hover, .options label:hover, .activate{
+    color: #f22c7e;
+}
