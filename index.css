@@ -13,8 +13,14 @@ body{
 .home-page{
     height: 100vh;
     width: 100%;
-    background-color: purple;
+    position: relative;
     overflow: hidden;
+}
+.home-page > video{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
 
 /* css for the header of the page */
@@ -26,7 +32,7 @@ body{
     justify-content: space-around;
     position: relative;
     z-index: 92;
-    background: rgb(0,0,0,0.45);
+    background: rgb(0,0,0,0.47);
     backdrop-filter: blur(5px);
     box-shadow: 0px 12px 18px #000;
     overflow: hidden;
@@ -43,13 +49,17 @@ body{
     font-size: 47px;
     -webkit-text-stroke: 1px #fff;
     color: #000;
-    text-shadow: 0px 0px 15px #cabdff, 0px 0px 6px #cabdff;
+    text-shadow: 0px 0px 11px #cadbff;
 }
 .left-header p{
     font-size: 29px;
     font-weight: bold;
     font-family: sans-serif;
     text-transform: uppercase;
+    background: linear-gradient(45deg, #00006e, #47d2ff);
+    color: transparent;
+    -webkit-text-stroke: 1px #cadbff;
+    background-clip: text;
 }
 
 /* css for the right part of the header */
@@ -68,14 +78,14 @@ body{
 }
 .options a{
     text-decoration: none;
-    color: #cabdff;
+    color: #cadbff;
     transition: all .36s ease;
 }
 .options a:hover{
-    color: blue;
+    color: #47d2ff;
 }
 .options a:first-child{
-    color: blue;
+    color: #47d2ff;
 }
 
 /* css for hamburger button */
@@ -141,9 +151,9 @@ body{
         height: 47px;
         width: 51px;
         gap: 7px;
-        border-radius: 9px;
-        background-color: transparent;
-        border: none;
+        border: 2px solid #cadbff;
+        border-radius: 7px;
+        background-color: rgb(0,0,0,0.47);
         cursor: pointer;
         transition: all .36s ease;
     }
@@ -151,21 +161,21 @@ body{
         height: 5px;
         border-radius: 6px;
         transition: all .36s ease;
-        background: #fff;
+        background: linear-gradient(45deg, #00006e, #47d2ff);
     }
     .menu-btn span:nth-child(1){
-        width: 45%;
+        width: 40%;
         transform: translateX(-50%);
     }
     .menu-btn span:nth-child(2){
-        width: 90%;
+        width: 80%;
     }
     .menu-btn span:nth-child(3){
-        width: 45%;
+        width: 40%;
         transform: translateX(50%);
     }
     .hamburger{
-        box-shadow: 0px 0px 18px #000;
+        box-shadow: 0px 0px 18px #47d2ff;
     }
     .hamburger span:nth-child(1){
         position: absolute;
@@ -195,7 +205,7 @@ body{
         height: 0px;
         font-size: 18px;
         font-family: sans-serif;
-        background: rgb(0,0,0,0.45);
+        background: rgb(0,0,0,0.47);
         backdrop-filter: blur(5px);
         box-shadow: 0px 20px 18px #000;
         overflow: hidden;
@@ -203,13 +213,13 @@ body{
     }
     .drop-down a{
         text-decoration: none;
-        color: #cabdff;
+        color: #cadbff;
     }
     .drop-down a:hover{
-        color: blue;
+        color: #47d2ff;
     }
     .drop-down a:first-child{
-        color: blue;
+        color: #47d2ff;
     }
     .drop-box{
         padding: 20px;
