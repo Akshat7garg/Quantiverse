@@ -9,6 +9,8 @@
 </head>
 <body>
 
+    <video autoplay muted loop src="/VIDEO/calculator-page.mp4"></video>
+
     <!-- for the choice button of the page -->
     <div class="choice-btn">
         <div id="icon" class="icon"><i class="fa-solid fa-angles-right"></i></div>
@@ -28,10 +30,6 @@
             <p>Arithematic Calculator</p>
         </div>
         <div class="choices">
-            <i class="fa-solid fa-gauge-high"></i>
-            <p>Speed Unit Convertor</p>
-        </div>
-        <div class="choices">
             <i class="fa-solid fa-text-height"></i>
             <p>Length Unit Convertor</p>
         </div>
@@ -44,9 +42,64 @@
             <p>Temperature Unit Convertor</p>
         </div>
         <div class="choices">
+            <i class="fa-solid fa-gauge-high"></i>
+            <p>Speed Unit Convertor</p>
+        </div>
+        <div class="choices">
             <i class="fa-solid fa-child"></i>
             <p>Body Mass Index Calculator</p>
         </div>
+    </div>
+
+    <!-- for the section where all the different type of calculators available -->
+    <div class="calculator-box">
+
+        <!-- for the arithematic calculator -->
+        <!-- for the length unit convertor -->
+        <div class="calculator" id="length">
+            <div class="inner-box">
+                <div class="heading">Length Unit Convertor</div>
+                <div class="convertor-part">
+                    
+                    <div class="input-section">
+                        <select name="length-input" id="length-input" class="length-input">
+                            <option value="km">Kilometers</option>
+                            <option value="m" selected>Meters</option>
+                            <option value="cm">Centimeters</option>
+                            <option value="mm">Millimeters</option>
+                            <option value="mil">Miles</option>
+                            <option value="ft">Foots</option>
+                            <option value="um">Micrometers</option>
+                            <option value="nm">Nanometers</option>
+                            <option value="au">Astronomical Unit</option>
+                        </select>
+                        <input type="number" id="length-input-number">
+                    </div>
+
+                    <div class="equals"><i class="fa-solid fa-arrow-right-arrow-left"></i></div>
+
+                    <div class="output-section">
+                        <select name="length-output" id="length-output" class="length-output">
+                            <option value="km" selected>Kilometers</option>
+                            <option value="m">Meters</option>
+                            <option value="cm">Centimeters</option>
+                            <option value="mm">Millimeters</option>
+                            <option value="mil">Miles</option>
+                            <option value="ft">Foots</option>
+                            <option value="um">Micrometers</option>
+                            <option value="nm">Nanometers</option>
+                            <option value="au">Astronomical Unit</option>
+                        </select>
+                        <input type="number" id="length-output-number">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- for the weight unit convertor -->
+        <!-- for the temperature unit convertor -->
+        <!-- for the speed unit convertor -->
+        <!-- for the body mass index calculator -->
     </div>
     
 </body>
