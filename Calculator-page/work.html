@@ -12,14 +12,14 @@
     <video autoplay muted loop src="/VIDEO/calculator-page.mp4"></video>
 
     <!-- for the choice button of the page -->
-    <div class="choice-btn">
-        <div id="icon" class="icon"><i class="fa-solid fa-angles-right"></i></div>
-        <div class="hover">Back to home</div>
+    <div class="top-btn">
+        <div id="icon-btn" class="icon"><i class="fa-solid fa-angles-right"></i></div>
+        <div class="hover">Other Calculators</div>
     </div>
 
     <!-- for the back to home button -->
-    <div class="home-btn">
-        <div id="back" class="back"><i class="fa-solid fa-house-chimney"></i></div>
+    <div class="top-btn">
+        <div id="icon-btn" class="back"><i class="fa-solid fa-house-chimney"></i></div>
         <div class="hover">Back to home</div>
     </div>
 
@@ -90,7 +90,7 @@
                             <option value="nm">Nanometre</option>
                             <option value="au">Astronomical Unit</option>
                         </select>
-                        <input type="number" id="length-output-number">
+                        <input type="text" id="length-output-number">
                     </div>
                 </div>
             </div>
@@ -127,7 +127,7 @@
                             <option value="ct">Carat</option>
                             <option value="lb">Pound (lb)</option>
                         </select>
-                        <input type="number" id="weight-output-number">
+                        <input type="text" id="weight-output-number">
                     </div>
                 </div>
             </div>
@@ -160,7 +160,7 @@
                             <option value="r">Degree Rankine</option>
                             <option value="re">Degree Reaumur</option>
                         </select>
-                        <input type="number" id="temperature-output-number">
+                        <input type="text" id="temperature-output-number">
                     </div>
                 </div>
             </div>
@@ -192,7 +192,7 @@
                             <option value="km/s">Kilometre per second</option>
                             <option value="mi/h">Mile per hour</option>
                         </select>
-                        <input type="number" id="speed-output-number">
+                        <input type="text" id="speed-output-number">
                     </div>
                 </div>
             </div>
@@ -202,7 +202,7 @@
         <div class="calculator" id="bmi">
             <div class="inner-box">
                 <div class="heading">Body Mass Index Calculator</div>
-                <div class="index-port">
+                <div class="index-part">
 
                     <div class="index-input-section">
                         <div class="index-input">
@@ -232,6 +232,14 @@
         </div>
 
     </div>
+
+    <script src="/JS/index.js"></script>
+    <script src="/JS/normal.js"></script>
+    <script src="/JS/length.js"></script>
+    <script src="/JS/weight.js"></script>
+    <script src="/JS/temperature.js"></script>
+    <script src="/JS/speed.js"></script>
+    <script src="/JS/bmi.js"></script>
     
 </body>
 </html>
