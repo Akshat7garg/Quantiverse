@@ -9,7 +9,7 @@ let t_inputTypeValue, t_outputTypeValue;
 t_inputTypeValue = t_inputType.value;
 t_outputTypeValue = t_outputType.value;
 t_input.value = 1;
-t_output.innerHTML = 0.001;
+t_output.innerHTML = 33.8;
 t_input.addEventListener('keyup', conversion);
 t_inputType.addEventListener('change', conversion);
 t_outputType.addEventListener('change', conversion);
