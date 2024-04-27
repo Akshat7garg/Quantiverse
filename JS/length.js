@@ -1,28 +1,28 @@
 // assigning the values to the variables
-let input = document.getElementById('length-input-number');
-let output = document.getElementById('length-output-number');
-let inputType = document.getElementById('length-input');
-let outputType = document.getElementById('length-output');
-let inputTypeValue, outputTypeValue;
+let l_input = document.getElementById('length-input-number');
+let l_output = document.getElementById('length-output-number');
+let l_inputType = document.getElementById('length-input');
+let l_outputType = document.getElementById('length-output');
+let l_inputTypeValue, l_outputTypeValue;
 
 // calling the function and initially assigning the the conversion type
-inputTypeValue = inputType.value;
-outputTypeValue = outputType.value;
-input.value = 1;
-output.value = 0.001;
-input.addEventListener('keyup', conversion);
-inputType.addEventListener('change', conversion);
-outputType.addEventListener('change', conversion);
+l_inputTypeValue = l_inputType.value;
+l_outputTypeValue = l_outputType.value;
+l_input.value = 1;
+l_output.innerHTML = 0.001;
+l_input.addEventListener('keyup', conversion);
+l_inputType.addEventListener('change', conversion);
+l_outputType.addEventListener('change', conversion);
 
 // for converting the units as the type has been selected
 function conversion() {
 
     // assigning the conversion type values to the variables
-    inputTypeValue = inputType.value;
-    outputTypeValue = outputType.value;
+    l_inputTypeValue = l_inputType.value;
+    l_outputTypeValue = l_outputType.value;
 
-    // calling various functions on the basis of the input conversion type value
-    switch (inputTypeValue) {
+    // calling various functions on the basis of the l_input conversion type value
+    switch (l_inputTypeValue) {
         case 'km': kilometer();
         break;
 
@@ -52,299 +52,299 @@ function conversion() {
     }
 }
 
-// function if input conversion type is kilometer
+// function if l_input conversion type is kilometer
 function kilometer() {
-    // assigning the values to output section based on the output conversion type
-    switch (outputTypeValue) {
-        case 'm': output.value = input.value * 1000;
+    // assigning the values to l_output section based on the l_output conversion type
+    switch (l_outputTypeValue) {
+        case 'm': l_output.innerHTML = l_input.value * 1000;
         break;
 
-        case 'cm': output.value = input.value * 100000;
+        case 'cm': l_output.innerHTML = l_input.value * 100000;
         break;
 
-        case 'mm': output.value = input.value * 1000000;
+        case 'mm': l_output.innerHTML = l_input.value * 1000000;
         break;
 
-        case 'mi': output.value = input.value * 0.621;
+        case 'mi': l_output.innerHTML = l_input.value * 0.621;
         break;
 
-        case 'ft': output.value = input.value * 3280.8;
+        case 'ft': l_output.innerHTML = l_input.value * 3280.8;
         break;
 
-        case 'um': output.value = input.value * 1000000000;
+        case 'um': l_output.innerHTML = l_input.value * 1000000000;
         break;
 
-        case 'nm': output.value = input.value * 1000000000000;
+        case 'nm': l_output.innerHTML = l_input.value * 1000000000000;
         break;
 
-        case 'au': output.value = input.value * 0.0000000066;
+        case 'au': l_output.innerHTML = l_input.value * 0.0000000066;
         break;
 
-        default: output.value = input.value;
+        default: l_output.innerHTML = l_input.value;
         break;
     }
 }
 
-// function if input conversion type is meter
+// function if l_input conversion type is meter
 function meter() {
-    // assigning the values to output section based on the output conversion type
-    switch (outputTypeValue) {
-        case 'km': output.value = input.value * 0.001;
+    // assigning the values to l_output section based on the l_output conversion type
+    switch (l_outputTypeValue) {
+        case 'km': l_output.innerHTML = l_input.value * 0.001;
         break;
 
-        case 'cm': output.value = input.value * 100;
+        case 'cm': l_output.innerHTML = l_input.value * 100;
         break;
 
-        case 'mm': output.value = input.value * 1000;
+        case 'mm': l_output.innerHTML = l_input.value * 1000;
         break;
 
-        case 'mi': output.value = input.value * 0.000621;
+        case 'mi': l_output.innerHTML = l_input.value * 0.000621;
         break;
 
-        case 'ft': output.value = input.value * 3.2808;
+        case 'ft': l_output.innerHTML = l_input.value * 3.2808;
         break;
 
-        case 'um': output.value = input.value * 1000000;
+        case 'um': l_output.innerHTML = l_input.value * 1000000;
         break;
 
-        case 'nm': output.value = input.value * 1000000000;
+        case 'nm': l_output.innerHTML = l_input.value * 1000000000;
         break;
 
-        case 'au': output.value = input.value * 0.0000000000066;
+        case 'au': l_output.innerHTML = l_input.value * 0.0000000000066;
         break;
 
-        default: output.value = input.value;
+        default: l_output.innerHTML = l_input.value;
         break;
     }
 }
 
-// function if input conversion type is centimeter
+// function if l_input conversion type is centimeter
 function centimeter() {
-    // assigning the values to output section based on the output conversion type
-    switch (outputTypeValue) {
-        case 'km': output.value = input.value * 0.00001;
+    // assigning the values to l_output section based on the l_output conversion type
+    switch (l_outputTypeValue) {
+        case 'km': l_output.innerHTML = l_input.value * 0.00001;
         break;
 
-        case 'm': output.value = input.value * 0.01;
+        case 'm': l_output.innerHTML = l_input.value * 0.01;
         break;
 
-        case 'mm': output.value = input.value * 10;
+        case 'mm': l_output.innerHTML = l_input.value * 10;
         break;
 
-        case 'mi': output.value = input.value * 0.00000621;
+        case 'mi': l_output.innerHTML = l_input.value * 0.00000621;
         break;
 
-        case 'ft': output.value = input.value * 0.032808;
+        case 'ft': l_output.innerHTML = l_input.value * 0.032808;
         break;
 
-        case 'um': output.value = input.value * 10000;
+        case 'um': l_output.innerHTML = l_input.value * 10000;
         break;
 
-        case 'nm': output.value = input.value * 10000000;
+        case 'nm': l_output.innerHTML = l_input.value * 10000000;
         break;
 
-        case 'au': output.value = input.value * 0.000000000000066;
+        case 'au': l_output.innerHTML = l_input.value * 0.000000000000066;
         break;
 
-        default: output.value = input.value;
+        default: l_output.innerHTML = l_input.value;
         break;
     }
 }
 
-// function if input conversion type is millimeter
+// function if l_input conversion type is millimeter
 function millimeter() {
-    // assigning the values to output section based on the output conversion type
-    switch (outputTypeValue) {
-        case 'km': output.value = input.value * 0.000001;
+    // assigning the values to l_output section based on the l_output conversion type
+    switch (l_outputTypeValue) {
+        case 'km': l_output.innerHTML = l_input.value * 0.000001;
         break;
 
-        case 'm': output.value = input.value * 0.001;
+        case 'm': l_output.innerHTML = l_input.value * 0.001;
         break;
 
-        case 'cm': output.value = input.value * 0.1;
+        case 'cm': l_output.innerHTML = l_input.value * 0.1;
         break;
 
-        case 'mi': output.value = input.value * 0.000000621;
+        case 'mi': l_output.innerHTML = l_input.value * 0.000000621;
         break;
 
-        case 'ft': output.value = input.value * 0.0032808;
+        case 'ft': l_output.innerHTML = l_input.value * 0.0032808;
         break;
 
-        case 'um': output.value = input.value * 1000;
+        case 'um': l_output.innerHTML = l_input.value * 1000;
         break;
 
-        case 'nm': output.value = input.value * 1000000;
+        case 'nm': l_output.innerHTML = l_input.value * 1000000;
         break;
 
-        case 'au': output.value = input.value * 0.0000000000000066;
+        case 'au': l_output.innerHTML = l_input.value * 0.0000000000000066;
         break;
 
-        default: output.value = input.value;
+        default: l_output.innerHTML = l_input.value;
         break;
     }
 }
 
-// function if input conversion type is miles
+// function if l_input conversion type is miles
 function miles() {
-    // assigning the values to output section based on the output conversion type
-    switch (outputTypeValue) {
-        case 'km': output.value = input.value * 1.6092693916961;
+    // assigning the values to l_output section based on the l_output conversion type
+    switch (l_outputTypeValue) {
+        case 'km': l_output.innerHTML = l_input.value * 1.6092693916961;
         break;
 
-        case 'm': output.value = input.value * 1609.2693916961;
+        case 'm': l_output.innerHTML = l_input.value * 1609.2693916961;
         break;
 
-        case 'cm': output.value = input.value * 160926.93916961;
+        case 'cm': l_output.innerHTML = l_input.value * 160926.93916961;
         break;
 
-        case 'mm': output.value = input.value * 1609269.3916961;
+        case 'mm': l_output.innerHTML = l_input.value * 1609269.3916961;
         break;
 
-        case 'ft': output.value = input.value * 5279.75;
+        case 'ft': l_output.innerHTML = l_input.value * 5279.75;
         break;
 
-        case 'um': output.value = input.value * 1609269391.6961;
+        case 'um': l_output.innerHTML = l_input.value * 1609269391.6961;
         break;
 
-        case 'nm': output.value = input.value * 1609269391696.1;
+        case 'nm': l_output.innerHTML = l_input.value * 1609269391696.1;
         break;
 
-        case 'au': output.value = input.value * 0.0000000107;
+        case 'au': l_output.innerHTML = l_input.value * 0.0000000107;
         break;
 
-        default: output.value = input.value;
+        default: l_output.innerHTML = l_input.value;
         break;
     }
 }
 
-// function if input conversion type is foots
+// function if l_input conversion type is foots
 function foots() {
-    // assigning the values to output section based on the output conversion type
-    switch (outputTypeValue) {
-        case 'km': output.value = input.value * 0.0003047999995;
+    // assigning the values to l_output section based on the l_output conversion type
+    switch (l_outputTypeValue) {
+        case 'km': l_output.innerHTML = l_input.value * 0.0003047999995;
         break;
 
-        case 'm': output.value = input.value * 0.3047999995;
+        case 'm': l_output.innerHTML = l_input.value * 0.3047999995;
         break;
 
-        case 'cm': output.value = input.value * 30.47999995;
+        case 'cm': l_output.innerHTML = l_input.value * 30.47999995;
         break;
 
-        case 'mm': output.value = input.value * 304.7999995;
+        case 'mm': l_output.innerHTML = l_input.value * 304.7999995;
         break;
 
-        case 'mi': output.value = input.value * 0.0001894;
+        case 'mi': l_output.innerHTML = l_input.value * 0.0001894;
         break;
 
-        case 'um': output.value = input.value * 304799.9995;
+        case 'um': l_output.innerHTML = l_input.value * 304799.9995;
         break;
 
-        case 'nm': output.value = input.value * 304799999.5;
+        case 'nm': l_output.innerHTML = l_input.value * 304799999.5;
         break;
 
-        case 'au': output.value = input.value * 0.00000000000203;
+        case 'au': l_output.innerHTML = l_input.value * 0.00000000000203;
         break;
 
-        default: output.value = input.value;
+        default: l_output.innerHTML = l_input.value;
         break;
     }
 }
 
-// function if input conversion type is micrometer
+// function if l_input conversion type is micrometer
 function micrometer() {
-    // assigning the values to output section based on the output conversion type
-    switch (outputTypeValue) {
-        case 'km': output.value = input.value * 0.000000001;
+    // assigning the values to l_output section based on the l_output conversion type
+    switch (l_outputTypeValue) {
+        case 'km': l_output.innerHTML = l_input.value * 0.000000001;
         break;
 
-        case 'm': output.value = input.value * 0.000001;
+        case 'm': l_output.innerHTML = l_input.value * 0.000001;
         break;
 
-        case 'cm': output.value = input.value * 0.0001;
+        case 'cm': l_output.innerHTML = l_input.value * 0.0001;
         break;
 
-        case 'mm': output.value = input.value * 0.001;
+        case 'mm': l_output.innerHTML = l_input.value * 0.001;
         break;
 
-        case 'mi': output.value = input.value * 0.000000000621;
+        case 'mi': l_output.innerHTML = l_input.value * 0.000000000621;
         break;
 
-        case 'ft': output.value = input.value * 0.0000032808;
+        case 'ft': l_output.innerHTML = l_input.value * 0.0000032808;
         break;
 
-        case 'nm': output.value = input.value * 1000;
+        case 'nm': l_output.innerHTML = l_input.value * 1000;
         break;
 
-        case 'au': output.value = input.value * 0.0000000000000000066;
+        case 'au': l_output.innerHTML = l_input.value * 0.0000000000000000066;
         break;
 
-        default: output.value = input.value;
+        default: l_output.innerHTML = l_input.value;
         break;
     }
 }
 
-// function if input conversion type is nanometer
+// function if l_input conversion type is nanometer
 function nanometer() {
-    // assigning the values to output section based on the output conversion type
-    switch (outputTypeValue) {
-        case 'km': output.value = input.value * 0.000000000001;
+    // assigning the values to l_output section based on the l_output conversion type
+    switch (l_outputTypeValue) {
+        case 'km': l_output.innerHTML = l_input.value * 0.000000000001;
         break;
 
-        case 'm': output.value = input.value * 0.000000001;
+        case 'm': l_output.innerHTML = l_input.value * 0.000000001;
         break;
 
-        case 'cm': output.value = input.value * 0.0000001;
+        case 'cm': l_output.innerHTML = l_input.value * 0.0000001;
         break;
 
-        case 'mm': output.value = input.value * 0.000001;
+        case 'mm': l_output.innerHTML = l_input.value * 0.000001;
         break;
 
-        case 'mi': output.value = input.value * 0.000000000000621;
+        case 'mi': l_output.innerHTML = l_input.value * 0.000000000000621;
         break;
 
-        case 'ft': output.value = input.value * 0.0000000032808;
+        case 'ft': l_output.innerHTML = l_input.value * 0.0000000032808;
         break;
 
-        case 'um': output.value = input.value * 0.001;
+        case 'um': l_output.innerHTML = l_input.value * 0.001;
         break;
 
-        case 'au': output.value = input.value * 0.0000000000000000000066;
+        case 'au': l_output.innerHTML = l_input.value * 0.0000000000000000000066;
         break;
 
-        default: output.value = input.value;
+        default: l_output.innerHTML = l_input.value;
         break;
     }
 }
 
-// function if input conversion type is astronomical unit
+// function if l_input conversion type is astronomical unit
 function astronomical() {
-    // assigning the values to output section based on the output conversion type
-    switch (outputTypeValue) {
-        case 'km': output.value = input.value * 149597582.5030667504413;
+    // assigning the values to l_output section based on the l_output conversion type
+    switch (l_outputTypeValue) {
+        case 'km': l_output.innerHTML = l_input.value * 149597582.5030667504413;
         break;
 
-        case 'm': output.value = input.value * 149597582503.0667504413;
+        case 'm': l_output.innerHTML = l_input.value * 149597582503.0667504413;
         break;
 
-        case 'cm': output.value = input.value * 14959758250306.67504413;
+        case 'cm': l_output.innerHTML = l_input.value * 14959758250306.67504413;
         break;
 
-        case 'mm': output.value = input.value * 149597582503066.7504413;
+        case 'mm': l_output.innerHTML = l_input.value * 149597582503066.7504413;
         break;
 
-        case 'mi': output.value = input.value * 92959937.76;
+        case 'mi': l_output.innerHTML = l_input.value * 92959937.76;
         break;
 
-        case 'ft': output.value = input.value * 490805717619.6;
+        case 'ft': l_output.innerHTML = l_input.value * 490805717619.6;
         break;
 
-        case 'um': output.value = input.value * 149597582503066750.4413;
+        case 'um': l_output.innerHTML = l_input.value * 149597582503066750.4413;
         break;
 
-        case 'nm': output.value = input.value * 149597582503066750441.3;
+        case 'nm': l_output.innerHTML = l_input.value * 149597582503066750441.3;
         break;
 
-        default: output.value = input.value;
+        default: l_output.innerHTML = l_input.value;
         break;
     }
 }
