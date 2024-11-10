@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <!-- width unit -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Infinity Equation</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    
+    <!-- Section of the page appears after loader -->
+    <div class="main-body">
+
+        <!-- Choices section -->
+        <div class="options">
+            <button class="arrow"><i class="fa-solid fa-angles-right"></i></button>
+            <div class="choices">
+                <button class="choice">
+                    <span><i class="fa-solid fa-calculator"></i></span>
+                    <span>Arithematic Calculator</span>
+                </button>
+                <button class="choice">
+                    <span><i class="fa-solid fa-text-height"></i></span>
+                    <span>Length Convertor</span>
+                </button>
+                <button class="choice">
+                    <span><i class="fa-solid fa-scale-unbalanced-flip"></i></span>
+                    <span>Weight Convertor</span>
+                </button>
+                <button class="choice">
+                    <span><i class="fa-solid fa-temperature-low"></i></span>
+                    <span>Temperature Convertor</span>
+                </button>
+                <button class="choice">
+                    <span><i class="fa-solid fa-child"></i></span>
+                    <span>BMI Calculator</span>
+                </button>
+                <button class="choice">
+                    <span><i class="fa-solid fa-dollar-sign"></i></span>
+                    <span>Currency Convertor</span>
+                </button>
+                <button class="choice">
+                    <span><i class="fa-solid fa-bolt"></i></span>
+                    <span>Power Convertor</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- main working section -->
+        <div class="work-area">
+
+            <!-- header of the page -->
+            <div class="header">
+                <div class="left">
+                    <span><i class="fa-solid fa-user-astronaut"></i></span>
+                    <span>The Infinity Equation</span>
+                </div>
+                <div class="right">
+                    <a href="">Developer Info</a>
+                    <a href="">Source Code</a>
+                </div>
+                <button class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+
+            <!-- types of calculators -->
+            <div class="calculators">
+                <div class="device tilt"></div>
+
+                <!-- arithematic calculator unit -->
+                <div class="device arithematic">
+                    <div class="heading">Arithematic Calculator</div>
+                    <div class="unit">
+                        <div class="screen">
+                            <div class="cursor"></div>
+                        </div>
+
+                        <!-- buttton secton 1 -->
+                        <div class="buttons">
+                            <button id="clearall">AC</button>
+                            <button id="clear">C</button>
+                            <button id="modulo">&percnt;</button>
+                            <button id="divide">&divide;</button>
+                        </div>
+
+                        <!-- buttton secton 2 -->
+                        <div class="buttons">
+                            <button class="num">7</button>
+                            <button class="num">8</button>
+                            <button class="num">9</button>
+                            <button id="multiply">&times;</button>
+                        </div>
+
+                        <!-- buttton secton 3 -->
+                        <div class="buttons">
+                            <button class="num">4</button>
+                            <button class="num">5</button>
+                            <button class="num">6</button>
+                            <button id="minus">&minus;</button>
+                        </div>
+
+                        <!-- buttton secton 4 -->
+                        <div class="buttons">
+                            <button class="num">1</button>
+                            <button class="num">2</button>
+                            <button class="num">3</button>
+                            <button id="plus">&plus;</button>
+                        </div>
+
+                        <!-- buttton secton 5 -->
+                        <div class="buttons">
+                            <button class="num">0</button>
+                            <button class="num">.</button>
+                            <button id="equals">&equals;</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- length convertor unit -->
+                <div class="device length">
+                    <div class="heading">Length Convertor</div>
+                    <div class="input-area">
+
+                        <!-- input form -->
+                        <div class="from" id="length">
+                            <div class="input">
+                                <label for="length-from">From</label>
+                                <input type="number" value="1" id="length-from">
+                            </div>
+                            <div class="selection">
+                                <select name="length-select"></select>
+                            </div>
+                        </div>
+
+                        <div class="swap"><i class="fa-solid fa-arrow-right-arrow-left"></i></div>
+
+                        <!-- input to -->
+                        <div class="to" id="length">
+                            <div class="input">
+                                <label for="length-to">To</label>
+                                <input type="number" value="1000" id="length-to">
+                            </div>
+                            <div class="selection">
+                                <select name="length-select"></select>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="quote">
+                        <p>Hello output</p>
+                    </div>
+                </div>
+
+                <!-- weight convertor unit -->
+                <div class="device weight">
+                    <div class="heading">Weight Convertor</div>
+                    <div class="input-area">
+
+                        <!-- input from -->
+                        <div class="form" id="weight">
+                            <div class="input">
+                                <label for="weight-from">From</label>
+                                <input type="number" value="1" id="weight-from">
+                            </div>
+                            <div class="selection">
+                                <select name="weight-select"></select>
+                            </div>
+                        </div>
+
+                        <div class="swap"><i class="fa-solid fa-arrow-right-arrow-left"></i></div>
+
+                        <!-- input to -->
+                        <div class="to" id="weight">
+                            <div class="input">
+                                <label for="weight-to">To</label>
+                                <input type="number" value="1000" id="weight-to">
+                            </div>
+                            <div class="selection">
+                                <select name="weight-select"></select>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="quote">
+                        <p>Hello output</p>
+                    </div>
+                </div>
+
+                <!-- temperature convertor unit -->
+                <div class="device temperature">
+                    <div class="heading">Temperature Convertor</div>
+                    <div class="input-area">
+
+                        <!-- input form -->
+                        <div class="from" id="temperature">
+                            <div class="input">
+                                <label for="temperature-from">From</label>
+                                <input type="number" value="1" id="temperature-from">
+                            </div>
+                            <div class="selection">
+                                <select name="temperature-select"></select>
+                            </div>
+                        </div>
+
+                        <div class="swap"><i class="fa-solid fa-arrow-right-arrow-left"></i></div>
+
+                        <!-- input to -->
+                        <div class="to" id="temperature">
+                            <div class="input">
+                                <label for="temperature-to">To</label>
+                                <input type="number" value="1000" id="temperature-to">
+                            </div>
+                            <div class="selection">
+                                <select name="temperature-select"></select>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="quote">
+                        <p>Hello output</p>
+                    </div>
+                </div>
+
+                <!-- bmi calculator unit -->
+                <div class="device bmi">
+                    <div class="heading">BMI Calculator</div>
+
+                    <!-- input of BMI -->
+                    <div class="input-area">
+                        <div class="height-input">
+                            <label for="height-in">Height (cm)</label>
+                            <input type="number" placeholder="Your Height" id="height-in">
+                        </div>
+                        <div class="weight-input">
+                            <label for="weight-in">Weight (kg)</label>
+                            <input type="number" placeholder="Your Weight" id="weight-in">
+                        </div>
+                    </div>
+
+                    <button class="compute" id="bmi-compute">Calculate BMI</button>
+
+                    <!-- output -->
+                    <div class="output" id="res-bmi">
+                        <div class="result">Your Body Mass Index: </div>
+                        <div class="advice">
+                            <div class="category">Overweight</div>
+                            <div class="suggetion">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa, minus!</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- currency convertor unit -->
+                <div class="device currency">
+                    <div class="heading">Currency Convertor</div>
+                    <div class="input-amount">
+                        <label for="amount">Enter Amount</label>
+                        <input type="number" value="1" id="amount">
+                    </div>
+                    <div class="selectors">
+
+                        <!-- input currency convert from -->
+                        <div class="from-select">
+                            <label for="curr-from">From</label>
+                            <div class="select-category">
+                                <img src="" alt="">
+                                <select name="curr-select" id="curr-from"></select>
+                            </div>
+                        </div>
+
+                        <div class="swap"><i class="fa-solid fa-arrow-right-arrow-left"></i></div>
+
+                        <!-- input currency convert to -->
+                        <div class="to-select">
+                            <label for="curr-to">To</label>
+                            <div class="select-category">
+                                <img src="" alt="">
+                                <select name="curr-select" id="curr-to"></select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="compute" id="convert">Exchange Rates</button>
+
+                    <!-- output -->
+                    <div class="output" id="res-curr">1 USD = 80 INR</div>
+                </div>
+
+                <!-- power convertor unit -->
+                <div class="device power">
+                    <div class="heading">Power Convertor</div>
+                    <div class="input-area">
+
+                        <!-- input form -->
+                        <div class="from" id="power">
+                            <div class="input">
+                                <label for="power-from">From</label>
+                                <input type="number" value="1" id="power-from">
+                            </div>
+                            <div class="selection">
+                                <select name="power-select"></select>
+                            </div>
+                        </div>
+
+                        <div class="swap"><i class="fa-solid fa-arrow-right-arrow-left"></i></div>
+
+                        <!-- input to -->
+                        <div class="to" id="power">
+                            <div class="input">
+                                <label for="power-to">To</label>
+                                <input type="number" value="1000" id="power-to">
+                            </div>
+                            <div class="selection">
+                                <select name="power-select"></select>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="quote">
+                        <p>Hello output</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
