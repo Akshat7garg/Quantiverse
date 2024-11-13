@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Infinity Equation</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- linking CSS files -->
+    <link rel="stylesheet" href="./CSS files/main.css">
+</head>
+<body>
+    
+    <!-- main segment of the page that appears after the loader -->
+    <div class="main-body">
+
+        <!-- slider panel drawer that consists all available calculator choices -->
+        <div class="options">
+            <!-- <button id="arrow"><i class="fa-solid fa-angles-right"></i></button> -->
+
+            <!-- section that contains all available choices of different types of calculators -->
+            <div class="choices">
+                <button class="choice">
+                    <span><i class="fa-solid fa-calculator"></i></span>
+                    <span>Arithematic Calculator</span>
+                </button>
+                
+                <button class="choice">
+                    <span><i class="fa-solid fa-text-height"></i></span>
+                    <span>Length Convertor</span>
+                </button>
+                
+                <button class="choice">
+                    <span><i class="fa-solid fa-scale-unbalanced"></i></span>
+                    <span>Weight Convertor</span>
+                </button>
+                
+                <button class="choice">
+                    <span><i class="fa-solid fa-child"></i></span>
+                    <span>BMI Calculator</span>
+                </button>
+                
+                <button class="choice">
+                    <span><i class="fa-solid fa-dollar-sign"></i></span>
+                    <span>Currency Convertor</span>
+                </button>
+                
+                <button class="choice">
+                    <span><i class="fa-solid fa-temperature-low"></i></span>
+                    <span>Temperature Convertor</span>
+                </button>
+                
+                <button class="choice">
+                    <span><i class="fa-solid fa-bolt"></i></span>
+                    <span>Power Convertor</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- section that contains header and the working calculator portal -->
+        <div class="work-bench">
+
+            <!-- header of the webpage -->
+            <div class="header">
+
+                <!-- left side of the header -->
+                <div class="left">
+                    <div id="logo"><i class="fa-solid fa-shuttle-space"></i></div>
+                    <p>The Infinity Equation</p>
+                </div>
+
+                <!-- right side and dropdown box of the header -->
+                <div class="right">
+                    <a href="#">Developer Info</a>
+                    <a href="#">Source Code</a>
+                </div>
+
+                <!-- hamburger button for the dropdown box that used in mobile devices -->
+                <button id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+
+            <!-- section contains all types of calculator devices -->
+            <div class="calculators">
+                <div class="tilt container"></div>
+
+                <!-- section where all arithematic operation perform (arithematic calculator device) -->
+                <div class="container arithematic">
+                    <div class="heading">Arithematic Calculator</div>
+                </div>
+
+                <!-- section where all length conversion operation perform (length convertor device) -->
+                <div class="container convertor">
+                    <div class="heading">Length Convertor</div>
+                    
+                    <!-- input section to perform operation -->
+                    <div class="convertor-input">
+
+                        <!-- section where input the value convert from -->
+                        <div class="input">
+                            <p>From</p>
+                            <input type="number" value="1" id="length-from">
+                            <select name="from-length">
+                                <option value="hello">hello</option>
+                                <option value="peter">peter</option>
+                            </select>
+                        </div>
+
+                        <div id="swap"><i class="fa-solid fa-arrow-right-arrow-left"></i></div>
+
+                        <!-- section where input the value convert to -->
+                        <div class="input">
+                            <p>To</p>
+                            <input type="number" value="100" id="length-to">
+                            <select name="to-length">
+                                <option value="hello">hello</option>
+                                <option value="peter">peter</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="quote">Hello Peter</div>
+                </div>
+
+                <!-- section where all weight conversion operation perform (weight convertor device) -->
+                <div class="container convertor">
+                    <div class="heading">Weight Convertor</div>
+                </div>
+
+                <!-- section where all BMI calculation operation perform (BMI calculator device) -->
+                <div class="container bmi">
+                    <div class="heading">BMI Calculator</div>
+                </div>
+
+                <!-- section where all currency conversion operation perform (currency convertor device) -->
+                <div class="container currency">
+                    <div class="heading">Currency Convertor</div>
+                </div>
+
+                <!-- section where all temperature conversion operation perform (temperature convertor device) -->
+                <div class="container convertor">
+                    <div class="heading">Temperature Convertor</div>
+                </div>
+
+                <!-- section where all power conversion operation perform (power convertor device) -->
+                <div class="container convertor">
+                    <div class="heading">Power Convertor</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
