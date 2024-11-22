@@ -1,0 +1,109 @@
+{
+    "Kilogram" : {
+        "Kilogram" : 1,
+        "Gram" : 1000,
+        "Milligram" : 1000000,
+        "Microgram" : 1000000000,
+        "Tonne" : 0.001,
+        "Quintal" : 0.01,
+        "Carat" : 5000,
+        "Pound" : 2.2046,
+        "Grain" : 15432.358
+    },
+
+    "Gram" : {
+        "Kilogram" : 0.001,
+        "Gram" : 1,
+        "Milligram" : 1000,
+        "Microgram" : 1000000,
+        "Tonne" : 0.000001,
+        "Quintal" : 0.00001,
+        "Carat" : 5,
+        "Pound" : 0.002205,
+        "Grain" : 15.4324
+    },
+
+    "Milligram" : {
+        "Kilogram" : 0.000001,
+        "Gram" : 0.001,
+        "Milligram" : 1,
+        "Microgram" : 1000,
+        "Tonne" : 0.000000001,
+        "Quintal" : 0.00000001,
+        "Carat" : 0.005,
+        "Pound" : 0.000002205,
+        "Grain" : 0.0154324
+    },
+
+    "Microgram" : {
+        "Kilogram" : 0.000000001,
+        "Gram" : 0.000001,
+        "Milligram" : 0.001,
+        "Microgram" : 1,
+        "Tonne" : 0.000000000001,
+        "Quintal" : 0.00000000001,
+        "Carat" : 0.000005,
+        "Pound" : 0.000000002205,
+        "Grain" : 0.0000154324
+    },
+
+    "Tonne" : {
+        "Kilogram" : 1000,
+        "Gram" : 1000000,
+        "Milligram" : 1000000000,
+        "Microgram" : 1000000000000,
+        "Tonne" : 1,
+        "Quintal" : 10,
+        "Carat" : 5000000,
+        "Pound" : 2204.62,
+        "Grain" : 15432358.35
+    },
+
+    "Quintal" : {
+        "Kilogram" : 100,
+        "Gram" : 100000,
+        "Milligram" : 100000000,
+        "Microgram" : 100000000000,
+        "Tonne" : 0.1,
+        "Quintal" : 1,
+        "Carat" : 500000,
+        "Pound" : 220.462,
+        "Grain" : 1543235.835
+    },
+
+    "Carat" : {
+        "Kilogram" : 0.0002,
+        "Gram" : 0.2,
+        "Milligram" : 200,
+        "Microgram" : 200000,
+        "Tonne" : 0.00000002,
+        "Quintal" : 0.000002,
+        "Carat" : 1,
+        "Pound" : 0.00044,
+        "Grain" : 3.0864
+    },
+
+    "Pound" : {
+        "Kilogram" : 0.4536,
+        "Gram" : 453.6,
+        "Milligram" : 453592.4,
+        "Microgram" : 453592374.5,
+        "Tonne" : 0.0004536,
+        "Quintal" : 0.004536,
+        "Carat" : 2267.96,
+        "Pound" : 1,
+        "Grain" : 7000
+    },
+
+    "Grain" : {
+        "Kilogram" : 0.0000648,
+        "Gram" : 0.064799,
+        "Milligram" : 64.799,
+        "Microgram" : 64798.91,
+        "Tonne" : 0.000000065,
+        "Quintal" : 0.00000065,
+        "Carat" : 0.324,
+        "Pound" : 0.000143,
+        "Grain" : 1
+    }
+}
