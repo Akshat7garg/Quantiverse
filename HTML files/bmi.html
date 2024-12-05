@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Infinity Equation - Arithematic</title>
+    <title>The Infinity Equation - BMI</title>
 
     <!-- linking some extra font and icon import links -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -12,10 +12,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@400..800&display=swap" rel="stylesheet">
 
     <!-- linking style sheets -->
-    <link rel="stylesheet" href="./Styling files/main.css">
+    <link rel="stylesheet" href="../Styling files/main.css">
 
     <!-- adding favicon -->
-    <link rel="shortcut icon" href="./Assets/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../Assets/favicon.png" type="image/x-icon">
 </head>
 <body>
 
@@ -47,37 +47,37 @@
             <!-- choices for each type of calculator device -->
             <div class="choices">
                 <div class="inner">
-                    <a href="./index.html" class="choice">
+                    <a href="../index.html" class="choice">
                         <span><i class="fa-solid fa-square-root-variable"></i></span>
                         <span>Arithematic Calculator</span>
                     </a>
                     
-                    <a href="./HTML files/length.html" class="choice">
+                    <a href="../HTML files/length.html" class="choice">
                         <span><i class="fa-solid fa-text-height"></i></span>
                         <span>Length Convertor</span>
                     </a>
                     
-                    <a href="./HTML files/weight.html" class="choice">
+                    <a href="../HTML files/weight.html" class="choice">
                         <span><i class="fa-solid fa-scale-unbalanced"></i></span>
                         <span>Weight Convertor</span>
                     </a>
                     
-                    <a href="./HTML files/currency.html" class="choice">
+                    <a href="../HTML files/currency.html" class="choice">
                         <span><i class="fa-solid fa-dollar-sign"></i></span>
                         <span>Currency Convertor</span>
                     </a>
                     
-                    <a href="./HTML files/bmi.html" class="choice">
+                    <a href="../HTML files/bmi.html" class="choice">
                         <span><i class="fa-solid fa-person"></i></span>
                         <span>BMI Calculator</span>
                     </a>
                     
-                    <a href="./HTML files/temperature.html" class="choice">
+                    <a href="../HTML files/temperature.html" class="choice">
                         <span><i class="fa-solid fa-temperature-low"></i></span>
                         <span>Temperature Convertor</span>
                     </a>
                     
-                    <a href="./HTML files/power.html" class="choice">
+                    <a href="../HTML files/power.html" class="choice">
                         <span><i class="fa-solid fa-bolt"></i></span>
                         <span>Power Convertor</span>
                     </a>
@@ -87,69 +87,42 @@
 
         <!-- segment where all the calculator devices are located -->
         <div class="calculators">
+            
+            <!-- container for the bmi calculator device -->
+            <div class="container bmi">
+                <div class="heading">BMI Calculator</div>
 
-            <!-- container for the arithematic calculator device -->
-            <div class="container arithematic">
-                <div class="heading">Arithematic Calculator</div>
+                <!-- segment that contains all height and weight input branch of the container -->
+                <div class="input-section" class="extra">
 
-                <!-- main box of the device -->
-                <div class="device-box">
-
-                    <!-- screen of the calculator -->
-                    <div class="screen">
-                        <div id="display">0</div>
-                        <div id="cursor"></div>
+                    <!-- height input -->
+                    <div class="input" class="extra">
+                        <p class="extra">You Height</p>
+                        <input type="number" placeholder="in meter (m)" id="height" class="extra cp">
                     </div>
 
-                    <!-- keypad/button section of the calculator -->
-                    <div class="keypad">
-
-                        <!-- row no. 1 of the keypad -->
-                        <div class="row">
-                            <button class="button">AC</button>
-                            <button class="button">C</button>
-                            <button class="button">%</button>
-                            <button class="button">/</button>
-                        </div>
-
-                        <!-- row no. 2 of the keypad -->
-                        <div class="row">
-                            <button class="button">7</button>
-                            <button class="button">8</button>
-                            <button class="button">9</button>
-                            <button class="button">*</button>
-                        </div>
-
-                        <!-- row no. 3 of the keypad -->
-                        <div class="row">
-                            <button class="button">4</button>
-                            <button class="button">5</button>
-                            <button class="button">6</button>
-                            <button class="button">-</button>
-                        </div>
-
-                        <!-- row no. 4 of the keypad -->
-                        <div class="row">
-                            <button class="button">1</button>
-                            <button class="button">2</button>
-                            <button class="button">3</button>
-                            <button class="button">+</button>
-                        </div>
-
-                        <!-- row no. 5 of the keypad -->
-                        <div class="row">
-                            <button class="button">00</button>
-                            <button class="button">0</button>
-                            <button class="button">.</button>
-                            <button class="button">=</button>
-                        </div>
+                    <!-- weight input -->
+                    <div class="input" class="extra">
+                        <p class="extra">You Weight</p>
+                        <input type="number" placeholder="in Kilogram (kg)" id="weight" class="extra cp">
                     </div>
                 </div>
+
+                <!-- button to generate the result on click -->
+                <button id="bmi-cal" class="extra cp">Calculate</button>
+
+                <!-- section that contains the output from the calculation -->
+                <div id="bmi-output">
+                    <div id="ans">You Body Mass Index: </div>
+                    <div id="category">Category: </div>
+                    <div id="advice">Advice: </div>
+                </div>
             </div>
+
         </div>
     </div>
     
     <!-- linking all the logic javascript files -->
-    <script src="./Logic files/arithematic.js"></script>
+     <script src="../Logic files/bmi.js"></script>
 </body>
 </html>
