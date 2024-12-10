@@ -1,0 +1,52 @@
+{
+    "Kilowatt (kW)" : {
+        "Kilowatt (kW)" : 1,
+        "Watt (W)" : 1000,
+        "Joule/second (J/s)" : 1000,
+        "Imperial housepower (hp)" : 1.34,
+        "Metric housepower (PS)" : 1.36,
+        "Newton-meter/second (N.m/s)" : 1000
+    },
+    "Watt (W)" : {
+        "Kilowatt (kW)" : 0.001,
+        "Watt (W)" : 1,
+        "Joule/second (J/s)" : 1,
+        "Imperial housepower (hp)" : 0.00134,
+        "Metric housepower (PS)" : 0.00136,
+        "Newton-meter/second (N.m/s)" : 1
+    },
+    "Joule/second (J/s)" : {
+        "Kilowatt (kW)" : 0.001,
+        "Watt (W)" : 1,
+        "Joule/second (J/s)" : 1,
+        "Imperial housepower (hp)" : 0.00134,
+        "Metric housepower (PS)" : 0.00136,
+        "Newton-meter/second (N.m/s)" : 1
+    },
+    "Imperial housepower (hp)" : {
+        "Kilowatt (kW)" : 0.7457,
+        "Watt (W)" : 745.7,
+        "Joule/second (J/s)" : 745.7,
+        "Imperial housepower (hp)" : 1,
+        "Metric housepower (PS)" : 1.0139,
+        "Newton-meter/second (N.m/s)" : 745.7
+    },
+    
+    "Metric housepower (PS)" : {
+        "Kilowatt (kW)" : 0.7355,
+        "Watt (W)" : 735.5,
+        "Joule/second (J/s)" : 735.5,
+        "Imperial housepower (hp)" : 0.986,
+        "Metric housepower (PS)" : 1,
+        "Newton-meter/second (N.m/s)" : 735.5
+    },
+    
+    "Newton-meter/second (N.m/s)" : {
+        "Kilowatt (kW)" : 0.001,
+        "Watt (W)" : 1,
+        "Joule/second (J/s)" : 1,
+        "Imperial housepower (hp)" : 0.00134,
+        "Metric housepower (PS)" : 0.00136,
+        "Newton-meter/second (N.m/s)" : 1
+    }
+}
