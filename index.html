@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Infinity Equation</title>
+
+    <!-- fonts and icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@400..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- stylesheets and favicon -->
+    <link rel="shortcut icon" href="./Assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./Style-sheets/utilities.css">
+    <link rel="stylesheet" href="./Style-sheets/main.css">
+    <link rel="stylesheet" href="./Style-sheets/responsive.css">
+</head>
+<body>
+    <!-- header -->
+    <div class="header">
+        <div class="left">
+            <i class="fa-solid fa-shuttle-space"></i>
+            <span>The Infinity Equation</span>
+        </div>
+        <div class="right">
+            <div class="link-box"></div>
+            <div class="btns">
+                <button class="drop-btn"><i class="fa-solid fa-angle-down"></i></button>
+                <button class="ham-btn"></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- main section -->
+    <div class="work-bench">
+        <!-- options -->
+        <div class="options">
+            <div class="inner-box">
+                <div class="choices"></div>
+                <p>copyright 2024</p>
+            </div>
+        </div>
+
+        <!-- calculators -->
+        <div class="calculator-box">
+            <div class="heading"></div>
+            <div class="device">
+                <!-- arithematic calculator -->
+                <div class="calcy" id="arithematic">
+                    <div class="screen"></div>
+                    <div class="keypad"></div>
+                </div>
+
+                <!-- BMI calculator -->
+                <div class="calcy" id="bmi">
+                    <div class="input-box">
+                        <div class="box"> <!-- height -->
+                            <p>Enter your Height : </p>
+                            <div class="input">
+                                <input type="number" id="h-inp">
+                                <label for="h-inp">in metre (m)</label>
+                            </div>
+                        </div>
+
+                        <div class="box"> <!-- weight -->
+                            <p>Enter your Weight : </p>
+                            <div class="input">
+                                <input type="number" id="w-inp">
+                                <label for="w-inp">in kilogram (kg)</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button id="bmi-gen">Calculate</button> <!-- button -->
+                    <div class="bmi-out"></div> <!-- result -->
+                </div>
+
+                <!-- unit conversion -->
+                <div class="calcy convert">
+                    <div class="input-box">
+                        <div class="in"> <!-- input -->
+                            <div class="input">
+                                <input type="number" id="in">
+                                <label for="in">From</label>
+                            </div>
+                            <div class="select-drop">
+                                <img src="" alt="">
+                                <select name="from" class="select-box"></select>
+                            </div>
+                        </div>
+
+                        <div class="swap"><i class="fa-solid fa-right-left"></i></div>
+
+                        <div class="out"> <!-- output -->
+                            <div class="input">
+                                <div id="out"></div>
+                                <label for="out">To</label>
+                            </div>
+                            <div class="select-drop">
+                                <img src="" alt="">
+                                <select name="to" class="select-box"></select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button id="gen">Convert</button> <!-- button -->
+                    <div class="result"></div> <!-- results -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- script files -->
+    <script src="./DOM-JS-files/index.js"></script>
+</body>
+</html>
