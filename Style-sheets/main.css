@@ -93,7 +93,7 @@ body::before {
 /* slider choices section */
 .options {
     justify-content: center;
-    height: calc(100vh - 15vh);
+    height: 100%;
     min-width: 21rem;
     padding: 1rem;
     position: static;

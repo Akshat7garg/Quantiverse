@@ -26,12 +26,14 @@ let track = 0;
 const sliding = () => {
     if (!hamBtn.classList.contains('active')) {
         opt.style.left = '1.5%';
-        dailogBG.style.display = 'block'
+        dailogBG.style.height = '100%'
+        dailogBG.style.width = '100%'
         hamBtn.classList.add('active');
     }
     else {
         opt.style.left = '-151.5%';
-        dailogBG.style.display = 'none'
+        dailogBG.style.height = '0%'
+        dailogBG.style.width = '0%'
         hamBtn.classList.remove('active');
     }
 }
@@ -40,12 +42,14 @@ const sliding = () => {
 const scaling = () => {
     if (!drop.classList.contains('active')) {
         linkBox.classList.add('active-box');
-        dailogBG.style.display = 'block'
+        dailogBG.style.height = '100%'
+        dailogBG.style.width = '100%'
         drop.classList.add('active');
     }
     else {
         linkBox.classList.remove('active-box');
-        dailogBG.style.display = 'none'
+        dailogBG.style.height = '0%'
+        dailogBG.style.width = '0%'
         drop.classList.remove('active');
     }
 }
