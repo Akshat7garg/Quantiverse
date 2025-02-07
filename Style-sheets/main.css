@@ -107,7 +107,9 @@ body::before {
     justify-content: space-between;
     flex-direction: column;
     padding: 0.5rem;
-    gap: 0.5rem;
+    gap: 1rem;
+    overflow-x: hidden;
+    overflow-y: scroll;
 }
 .inner-box p {
     font-family: 'Baloo Thambi 2', sans-serif;
@@ -121,8 +123,6 @@ body::before {
     flex-direction: column;
     gap: 2rem;
     padding: 0.5rem 1rem;
-    overflow-x: hidden;
-    overflow-y: scroll;
 }
 .opt-btn {
     justify-content: start;
@@ -198,7 +198,7 @@ body::before {
     overflow-x: scroll;
     overflow-y: hidden;
 }
-.screen::-webkit-scrollbar, .choices::-webkit-scrollbar {
+.screen::-webkit-scrollbar, .inner-box::-webkit-scrollbar {
     display: none;
 }
 .keypad {
