@@ -1,4 +1,4 @@
-# ♾️ Quantiverse
+# ☄️ Quantiverse
 
 [![Website Link](https://img.shields.io/badge/Website-Online-brightgreen)](https://akshat7garg.github.io/Quantiverse/)
 
