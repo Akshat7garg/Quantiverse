@@ -8,7 +8,7 @@ const temp_from = document.querySelector('#temperature .in .select-box');
 const temp_to = document.querySelector('#temperature .out .select-box');
 
 // declaration of variables requiered for DOM manipulation and unit conversion
-const temp_url = "../JSON-files/temperature.json";
+const temp_url = "https://raw.githubusercontent.com/Akshat7garg/Quantiverse/main/JSON-files/temperature.json";
 opt_list = ["Degree Celsius (C)", "Degree Fahrenheit (F)", "Degree Reaumur (Re)", "Degree Rankine (R)", "Kelvin (K)"];
 
 // initializing some values and variables

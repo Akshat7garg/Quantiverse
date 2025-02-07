@@ -8,7 +8,7 @@ const pow_from = document.querySelector('#power .in .select-box');
 const pow_to = document.querySelector('#power .out .select-box');
 
 // declaration of variables requiered for DOM manipulation and unit conversion
-const pow_url = "../JSON-files/power.json";
+const pow_url = "https://raw.githubusercontent.com/Akshat7garg/Quantiverse/main/JSON-files/power.json";
 opt_list = ["Kilowatt (kW)", "Watt (W)", "Joule/second (J/s)", "Imperial housepower (hp)", "Metric housepower (PS)", "Newton-meter/second (N.m/s)"];
 
 // initializing some values and variables

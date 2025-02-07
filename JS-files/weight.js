@@ -8,7 +8,7 @@ const wei_from = document.querySelector('#weight .in .select-box');
 const wei_to = document.querySelector('#weight .out .select-box');
 
 // declaration of variables requiered for DOM manipulation and unit conversion
-const wei_url = "../JSON-files/weight.json";
+const wei_url = "https://raw.githubusercontent.com/Akshat7garg/Quantiverse/main/JSON-files/weight.json";
 opt_list = ["Kilogram (kg)", "Gram (g)", "Milligram (mg)", "Microgram (ug)", "Tonne (t)", "Quintal (q)", "Carat (c)", "Pound (lb)", "Grain (gr)"];
 
 // initializing some values and variables

@@ -1,6 +1,6 @@
 # ☄️ Quantiverse
 
-[![Website Link](https://img.shields.io/badge/Website-Online-brightgreen)](https://akshat7garg.github.io/Quantiverse/)
+<a href="https://akshat7garg.github.io/Quantiverse/" target="_blank"><img src="https://img.shields.io/badge/Website-Online-brightgreen" alt="Website is link now"></a>
 
 A collection of calculators and unit converters designed to simplify your everyday calculations.
 
