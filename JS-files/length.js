@@ -8,7 +8,7 @@ const len_from = document.querySelector('#length .in .select-box');
 const len_to = document.querySelector('#length .out .select-box');
 
 // declaration of variables requiered for DOM manipulation and unit conversion
-const len_url = "../JSON-files/length.json";
+const len_url = "https://github.com/Akshat7garg/Quantiverse/blob/main/JSON-files/length.json";
 let opt_list = ["Kilometre (km)", "Metre (m)", "Decimetre (dm)", "Centimetre (cm)", "Millimetre (mm)", "Inch (in)", "Mile (mi)", "Foot (ft)", "Yard (yd)"];
 
 // initializing some values and variables
