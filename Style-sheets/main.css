@@ -82,6 +82,7 @@ body::before {
 .work-bench {
     height: calc((100vh - 64px));
     width: 100%;
+    align-items: flex-start;
     justify-content: space-between;
     position: relative;
 }
@@ -92,7 +93,7 @@ body::before {
 /* slider choices section */
 .options {
     justify-content: center;
-    height: 100%;
+    height: calc(100vh - 15vh);
     min-width: 21rem;
     padding: 1rem;
     position: static;
@@ -117,7 +118,6 @@ body::before {
     opacity: 0.5;
 }
 .choices {
-    height: 100%;
     width: 100%;
     justify-content: space-around;
     flex-direction: column;
