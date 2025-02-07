@@ -1,0 +1,346 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    width: 100vw;
+    background-color: #121212;
+    color: #E0E0E0;
+    overflow: hidden;
+}
+body::after, body::before {
+    content: '';
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -10;
+    top: 0;
+    left: 0;
+    background: radial-gradient(circle, rgba(0, 255, 255, 1) 30%, rgba(0, 255, 255, 0.3) 80%);
+    clip-path: circle(30% at 10% 10%);
+}
+body::before {
+    clip-path: circle(30% at 90% 90%);
+}
+.flex, .box input, .in input, #out, .work-bench, .opt-btn, .opt-btn span:first-child, .row button, .row {
+    display: flex;
+    align-items: center;
+}
+
+/* header of the page */
+.header {
+    justify-content: space-between;
+    padding: 0.75rem 5rem;
+    min-height: 4rem;
+    width: 100%;
+    background: #1A1A1A;
+    box-shadow: 0px 0px 11px rgb(0, 0, 0);
+}
+
+/* left part of header */
+.left {
+    justify-content: center;
+    gap: 1rem;
+    cursor: default;
+}
+.left i {
+    font-size: 2.5rem;
+    color: #00FFFF;
+}
+.left span {
+    font-family: 'Baloo Thambi 2', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #E0E0E0;
+    text-shadow: 0 0 3px #00ffff;
+}
+
+/* right part of header */
+.right, .link-box, .btns {
+    justify-content: center;
+    gap: 2rem;
+}
+.link-box a {
+    font-family: 'Baloo Thambi 2', sans-serif;
+    color: #E0E0E0;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: all 0.2s ease-in-out;
+}
+.link-box a:hover {
+    font-weight: 600;
+    color: #00ffff;
+    scale: 1.05;
+}
+.btns {
+    display: none;
+}
+
+/* main-section of the webpage */
+.work-bench {
+    height: calc((100vh - 64px));
+    width: 100%;
+    justify-content: space-between;
+    position: relative;
+}
+.dailogBG {
+    display: none;
+}
+
+/* slider choices section */
+.options {
+    justify-content: center;
+    height: 100%;
+    min-width: 21rem;
+    padding: 1rem;
+    position: static;
+    transition: all 0.3s ease-in-out;
+}
+.inner-box {
+    height: 100%;
+    width: 100%;
+    background: #1A1A1A;
+    box-shadow: 0 0 18px #000000;
+    border-radius: 1.5rem;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 0.5rem;
+    gap: 0.5rem;
+}
+.inner-box p {
+    font-family: 'Baloo Thambi 2', sans-serif;
+    font-size: 0.75rem;
+    opacity: 0.5;
+}
+.choices {
+    height: 100%;
+    width: 100%;
+    justify-content: space-around;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 0.5rem 1rem;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+.opt-btn {
+    justify-content: start;
+    gap: 0.5rem;
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    width: 100%;
+    background-color: #333333;
+    box-shadow: 0 0 9px #000000;
+    border: none;
+    color: #E0E0E0;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+.opt-btn span:first-child {
+    width: 3rem;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+.opt-btn span:last-child {
+    font-family: 'Baloo Thambi 2', sans-serif;
+    font-size: 1rem;
+    transition: all 0.2s ease-in-out;
+}
+.opt-btn:hover span:last-child, .btnToggler span:last-child {
+    font-weight: 800;
+}
+.btnToggler {
+    box-shadow: 0 0 9px #00ffff;
+    background-color: #00FFFF;
+    color: #121212;
+    scale: 1.05;
+}
+
+/* calculator devices section */
+.device {
+    padding: 1rem;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    position: relative;
+}
+
+/* calculators */
+.calcy {
+    width: fit-content;
+    position: absolute;
+    background: #121212;
+    padding: 1.5rem;
+    border-radius: 1.5rem;
+    gap: 2.5rem;
+    justify-content: center;
+    flex-direction: column;
+    scale: 0;
+    box-shadow: 0 0 18px #00ffff;
+    transition: all 0.5s ease-in-out;
+}
+
+/* arithmetic calculator components */
+.screen {
+    width: 19rem;
+    height: 4rem;
+    background: #00ffff;
+    border: 2px solid rgba(0, 255, 255, 0.3);
+    border-radius: 1rem;
+    box-shadow: inset -3px 5px 9px #000000;
+    flex-direction: row-reverse;
+    padding: 1rem;
+    font-size: 2rem;
+    font-family: 'Baloo Thambi 2', sans-serif;
+    font-weight: 800;
+    color: #121212;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+.screen::-webkit-scrollbar, .choices::-webkit-scrollbar {
+    display: none;
+}
+.keypad {
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    gap: 0.75rem;
+}
+.row {
+    justify-content: space-between;
+    gap: 1.25rem;
+    width: 100%;
+}
+.row button {
+    font-size: 1.75rem;
+    font-weight: 700;
+    font-family: 'Baloo Thambi 2', sans-serif;
+    justify-content: center;
+    height: 3.5rem;
+    background-color: #333333;
+    box-shadow: 0 0 9px #000000;
+    border: none;
+    color: #E0E0E0;
+    cursor: pointer;
+    border-radius: 1rem;
+    width: 3.5rem;
+    transition: all 0.1s ease-in-out;
+}
+.row button:hover, #bmi-gen:hover, #gen:hover {
+    box-shadow: 0 0 9px #00ffff;
+    background-color: #1A1A1A;
+}
+.row button:active, #bmi-gen:active, #gen:active {
+    box-shadow: 0 0 9px #000000;
+    background-color: #1A1A1A;
+    scale: 0.92;
+}
+#equal {
+    width: 8.6rem;
+    background-color: #00ffff;
+    color: #121212;
+}
+
+/* bmi and unit convertor components */
+#bmi-gen, #gen {
+    font-size: 1rem;
+    font-family: 'Baloo Thambi 2', sans-serif;
+    font-weight: 800;
+    border-radius: 0.75rem;
+    border: none;
+    padding: 0.5rem 2rem;
+    background-color: #333333;
+    box-shadow: 0 0 9px #000000;
+    color: #E0E0E0;
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+}
+.bmi-out, .result {
+    width: 100%;
+    font-family: "Baloo Thambi 2", sans-serif;
+    padding: 0.5rem 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    border-radius: 0.75rem;
+    background: rgba(0, 255, 255, 0.1);
+    box-shadow: 0 0 9px #00ffff;
+}
+.swap {
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 50%;
+    border: 2px solid #00ffff;
+    justify-content: center;
+    margin: auto;
+    box-shadow: 0 0 9px #00ffff;
+    color: #00FFFF;
+}
+
+/* input components */
+.input-box {
+    display: flex;
+    gap: 1rem;
+    flex-direction: row;
+    width: 100%;
+    font-family: 'Baloo Thambi 2', sans-serif;
+}
+.box, .in, .out {
+    display: flex;
+    gap: 0.5rem;
+    flex-direction: column;
+    width: 19rem;
+}
+.box input, .in input, #out {
+    font-family: 'Baloo Thambi 2', sans-serif;
+    height: 3rem;
+    background: rgb(0, 0, 0, 0.5);
+    border-radius: 0.75rem;
+    border: 2px solid rgba(0, 255, 255, 0.3);
+    padding: 0.5rem;
+    color: #fff;
+    background: #00ffff;
+    box-shadow: inset -3px 5px 9px #000000;
+    font-weight: 600;
+    color: #121212;
+    font-size: 1.25rem;
+}
+.box input::placeholder, .in input::placeholder {
+    font-size: 1rem;
+    color: #121212;
+}
+
+/* selection components */
+.select-box {
+    font-family: 'Baloo Thambi 2', sans-serif;
+    font-size: 1rem;
+    width: 100%;
+    border-radius: 0.5rem;
+    background-color: #333333;
+    color: #e0e0e0;
+    border: none;
+    padding: 0.5rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+select.select-box option {
+    background-color: rgba(0, 255, 255, 0.3);
+    color: #121212;
+    font-weight: 600;
+    cursor: pointer;
+}
+select.select-box option:checked {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+select.select-box::-webkit-scrollbar {
+    background-color: rgba(0, 255, 255, 0.3);
+    width: 6px;
+}
+select.select-box::-webkit-scrollbar-thumb {
+    background-color: #121212;
+    border-radius: 6px;
+}
