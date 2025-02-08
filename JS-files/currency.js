@@ -32,14 +32,6 @@ const updatecurVal = async () => {
     cur_res.innerText = `1 ${cur_from.value} = ${data[from][to]} ${cur_to.value}`;
 };
 
-// adding event listeners to window and convert btn
-cur_btn.addEventListener('click', () => {
-    updatecurVal();
-});
-window.addEventListener('load', () => {
-    updatecurVal();
-});
-
 // adding options to the select drop-down box in currency unit conversion device
 for (let select of cur_drop) {
     for (let opt in country_data) {
@@ -57,3 +49,11 @@ for (let select of cur_drop) {
         }
     }
 }
+
+// adding event listeners to window and convert btn
+cur_btn.addEventListener('click', () => {
+    updatecurVal();
+});
+window.addEventListener('load', () => {
+    updatecurVal();
+});
