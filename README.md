@@ -2,6 +2,16 @@
 
 A collection of calculators and unit converters designed to simplify your everyday calculations.
 
+---
+
+[![Screenshot](https://akshat7garg.github.io/Quantiverse/preview.png)](https://akshat7garg.github.io/Quantiverse/)
+
+## 🌐 Live Preview
+
+> [https://akshat7garg.github.io/Quantiverse/](https://akshat7garg.github.io/Quantiverse/)
+
+---
+
 ## 🌟 Features
 
 This website, "Quantiverse," offers a range of tools:
@@ -14,14 +24,8 @@ This website, "Quantiverse," offers a range of tools:
 *   **🌡️ Temperature Converter:** Convert between different units of temperature.
 *   **⚡ Power Converter:** Convert between different units of power.
 
-## 🚀 Deployed Link
-
-You can access the live website here:
-
-[https://akshat7garg.github.io/Quantiverse/](https://akshat7garg.github.io/Quantiverse/)
-
 ## 🛠️ Technologies Used
 
-*   HTML
-*   CSS
-*   JavaScript
+*   HTML – Structure and layout of the calculator interface
+*   CSS – Styling and responsive design
+*   JavaScript – Calculator logic and interactivity
